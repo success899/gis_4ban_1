@@ -15,8 +15,8 @@ def hello_world(request):
         new_model.save()
 
         data_list = NewModel.objects.all()
-        return render(request, 'accountapp/hello_world.html', context={'new_model': data_list})
+        return render(request, 'accountapp/hello_world.html', context={'data_list': data_list})
 
     else:
         data_list = NewModel.objects.all()
-        return render(request, 'accountapp/hello_world.html', context={'new_model': data_list})
+        return render(request, 'accountapp/hello_world.html', context={'data_list': data_list})
