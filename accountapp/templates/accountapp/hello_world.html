@@ -12,7 +12,9 @@
             <input value="SEND" type="submit" class = "btn btn-outline-info rounded-pill px-5">
         </form>
 
+        {% for data in data_list %}
         <h3>{{ new_model.text }}</h3>
+        {% endfor %}
     </div>
 
 {% endblock %}
