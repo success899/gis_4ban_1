@@ -19,14 +19,11 @@ def hello_world(request):
         new_model.text = temp
         new_model.save()
 
-
         return HttpResponseRedirect(reverse('accountapp:hello_world'))
 
     else:
         data_list = NewModel.objects.all()
         return render(request, 'accountapp/hello_world.html', context={'data_list': data_list})
-
-
 
 
 class AccountCreateView(CreateView):
