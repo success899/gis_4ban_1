@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo 'asdzwdxwdc004'
+RUN echo 'ac004'
 
 RUN git clone https://github.com/success899/gis_4ban_1.git
 
